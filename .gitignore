@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.pot
+*.pyc
+
+# Django
+*.db
+.env
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Docker
+*.pid
+*.sock
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.coverage
+htmlcov/
+*.log
+coverage.xml
+docker-compose.override.yml
+
+# Migrations (optional)
+**/migrations/*.pyc
+**/migrations/__pycache__/

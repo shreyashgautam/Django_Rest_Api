@@ -1,0 +1,27 @@
+services:
+  db:
+    image: postgres:14
+    env_file:
+    - .env
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - POSTGRES_DB=credit_db
+      - POSTGRES_USER=shreyashgautam
+      - POSTGRES_PASSWORD=shreyash#123
+      - POSTGRES_HOST=db
+      - POSTGRES_PORT=5432
+
+volumes:
+  postgres_data:
