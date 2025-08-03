@@ -77,11 +77,11 @@ class Loan(models.Model):
 2. **Environment Configuration**
    Create a `.env` file in the root directory:
    ```env
-   POSTGRES_DB=credit_db
-   POSTGRES_USER=shreyashgautam
-   POSTGRES_PASSWORD=shreyash#123
-   POSTGRES_HOST=db
-   POSTGRES_PORT=5432
+   POSTGRES_DB=
+   POSTGRES_USER=
+   POSTGRES_PASSWORD=
+   POSTGRES_HOST=
+   POSTGRES_PORT=
    ```
 
 3. **Build and Run**
@@ -392,13 +392,13 @@ django-cors-headers
 
 ### Environment Variables
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `POSTGRES_DB` | Database name | ` ` |
-| `POSTGRES_USER` | Database user | ` ` |
-| `POSTGRES_PASSWORD` | Database password | ` ` |
-| `POSTGRES_HOST` | Database host | ` ` |
-| `POSTGRES_PORT` | Database port | ` ` |
+| Variable | Description |
+|----------|-------------|
+| `POSTGRES_DB` | Database name | 
+| `POSTGRES_USER` | Database user |
+| `POSTGRES_PASSWORD` | Database password | 
+| `POSTGRES_HOST` | Database host |
+| `POSTGRES_PORT` | Database port |
 
 
 ## 📝 License
